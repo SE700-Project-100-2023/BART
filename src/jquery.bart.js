@@ -113,7 +113,7 @@
       balloon: {
         // default settings for a balloon
         earnings: 0.05, // potential earnings for each pump
-        popprob: 64, // probability of popping (as 1 out of X) TODO
+        popprob: 32, // probability of popping (as 1 out of X) TODO
         radius: 48, // balloon size
         increment: 0.01, // increment size of balloon at each pump
         color: "#DA110D", // color of balloon
@@ -655,6 +655,10 @@
           ) {
             canvas.drawLayers();
           }
+
+          //todo pumps
+          console.log(`Balloon ${balcnt + 1} pumped ${bal.pumps} times`);
+
         });
 
       // next in button
@@ -723,6 +727,11 @@
           butInflate.show();
           butCashin.show();
           butNext.hide();
+
+          //todo next
+          console.log(
+            `Balloon ${balcnt} finished, totaling ${opts.earned}`
+          );
         });
 
       // cash in button
@@ -746,7 +755,7 @@
               .setLayer("totearn", {
                 text: opts.txt_total_earned + opts.earned,
               })
-              .drawLayers();
+              .drawLayers();  
           }
 
           // show/hide buttons
@@ -760,7 +769,11 @@
           if (opts.sounds == true) {
             snds.cashin.play();
           }
-          console.log(`Balloon ${balcnt+1} earned ${bal.earned} with ${bal.pumps} pumps, totaling ${opts.earned}`);
+
+          //TODO cash in
+          console.log(
+            `Balloon ${balcnt + 1} cashed in ${bal.earned} totaling ${opts.earned}`
+          );
         });
 
       // draw first ballon

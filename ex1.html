@@ -5,7 +5,7 @@
 
 	<head>
 
-	<title>oBART: Example 1</title>
+	<title>oBART</title>
         
 	<meta charset="utf-8" />
 	
@@ -24,7 +24,7 @@
 		
 			// create a BART with default values using 10 balloons
 			// TODO
-			$("#bart").bart( 20 );
+			$("#bart").bart( 15 );
 		});
 	
 	//]]>
@@ -34,54 +34,11 @@
 	<body>
 
 	<h1 style="text-align:center;">Online Balloon Analogue Risk Task (oBART)</h1>
-	<h2 style="text-align:center;">Example 1</h2>
                         
 	<!-- load BART here -->
 	<div id="bart" style="margin: auto; text-align: center;"></div>
         
-	<p style="text-align:center;">For more information see <a href="http://timo.gnambs.at/">http://timo.gnambs.at</a>.</p>
-
-	<br /><br/>
-	<h2>Instructions</h2>
-	
-	<ol>
-		<li>Load all required files for the BART in the head of the page:
-<pre><code>
-&lt;script type="text/javascript" src="src/jquery-3.0.0.min.js"&gt;&lt;/script&gt;	&lt;!-- basic javascript library for dom manipulation --&gt;
-&lt;script type="text/javascript" src="src/jcanvas.min.js"&gt;&lt;/script&gt;      	&lt;!-- the canvas plugin --&gt;
-&lt;script type="text/javascript" src="src/jquery.bart.js"&gt;&lt;/script&gt;       &lt;!-- the main BART plugin --&gt;
-&lt;link rel="stylesheet" type="text/css" href="src/jquery.bart.css" /&gt;    &lt;!-- additional styles for to make the BART look fancy --&gt;
-</pre></code>
-		</li>
-		<li>Create an element in the body of the page with a unique <code>id</code>-attribute (here: "bart"):
-<pre><code>&lt;div id="bart"&gt;&lt;/div&gt;</pre></code>
-		</li>
-		<li>Create a script section in the head of the page:
-<pre><code>
-&lt;script type="text/javascript"&gt;
-&lt;/script&gt;
-</pre></code>
-		</li>
-		<li>Initialize the BART script after the page has loaded:
-<pre><code>
-&lt;script type="text/javascript"&gt;
-	$(document).ready(function() {   // initialize the BART after the page has loaded
-	});
-&lt;/script&gt;
-</pre></code>
-		</li>
-		<li>Define the BART (e.g., number and color of balloons) using the <code>id</code> defined in step 2 (see head of <code>src/jquery.bart.js</code> for configuration options):
-<pre><code>
-&lt;script type="text/javascript"&gt;
-	$(document).ready(function() {   // initialize the BART after the page has loaded
-		$("#bart").bart( 10 );   // create a BART with default values using 10 balloons
-	});
-&lt;/script&gt;
-</pre></code>
-		If only a single number is passed to the <code>bart()</code>-function, the number indicates the number of balloons.
-		</li>
-	</ol>
-	
+	<p style="text-align:center;">For more information please see <a href="https://timo.gnambs.at/research/bart">this website</a>.</p>
 
        
 	</body>
